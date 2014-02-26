@@ -9,7 +9,15 @@ Demo
     $ curl https://raw.github.com/naushadzaman/heroku-flask-sklearn/master/setup_prerequisite.sh | sh
 
     $ git clone https://github.com/naushadzaman/heroku-flask-sklearn
-    $ cd heroku-flask-sklearn
+    
+    $ mkdir sample-foo
+    $ cd sample-foo/
+    
+    $ cp ../heroku-flask-sklearn/.gitignore .
+    $ cp ../heroku-flask-sklearn/Procfile .	
+    $ cp ../heroku-flask-sklearn/hello.py .
+    
+    $ rm -rf ../heroku-flask-sklearn
 
     $ heroku login
 
@@ -21,7 +29,9 @@ Demo
     $ git commit -m 'initialize'
 
     $ foreman start
-    $ heroku scale web=1
-    $ heroku ps
+    ctrl + C
 
     $ git push heroku master
+ 
+    $ heroku scale web=1
+    $ heroku ps
