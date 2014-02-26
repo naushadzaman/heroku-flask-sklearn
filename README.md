@@ -3,6 +3,15 @@ heroku-flask-sklearn
 
 Heroku buildpack: Python, Numpy, Scipy, Scikit-learn along with instructions to install Flask, the web framework, and Gunicorn, the web server.
 
+Alternative Demo
+-----
+	# initial setup 
+	$ https://raw.github.com/naushadzaman/heroku-flask-sklearn/master/onetime_setup.sh
+
+	$ mkdir flask-sklearn
+	$ cd flask-sklearn/
+	
+	
 Demo
 ----
     $ git clone https://github.com/naushadzaman/heroku-flask-sklearn
