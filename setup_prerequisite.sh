@@ -21,7 +21,7 @@ sudo apt-get update
 sudo apt-get install -y libatlas-base-dev gfortran python-dev build-essential g++
 sudo pip install numpy
 sudo pip install scipy
-sudo pip install -U scikit-learn
+sudo pip install scikit-learn
 
 
 ## Disable swap
@@ -32,3 +32,5 @@ sudo pip install -U scikit-learn
 # Install Flask, the web framework, and Gunicorn, the web server.
 sudo pip install Flask gunicorn
 
+## Installation on AWS 
+## https://gist.github.com/dacamo76/4780765
