@@ -5,13 +5,13 @@ Heroku buildpack: Python, Numpy, Scipy, Scikit-learn along with instructions to 
 
 Demo
 ----
-    # setup pre-requisites
-    $ curl https://raw.github.com/naushadzaman/heroku-flask-sklearn/master/setup_prerequisite.sh | sh
-
     $ git clone https://github.com/naushadzaman/heroku-flask-sklearn
     
     $ mkdir flask-sklearn
     $ cd flask-sklearn/
+
+    # setup pre-requisites
+    $ curl https://raw.github.com/naushadzaman/heroku-flask-sklearn/master/setup_prerequisite.sh | sh
     
     $ cp ../heroku-flask-sklearn/.gitignore .
     $ cp ../heroku-flask-sklearn/Procfile .
