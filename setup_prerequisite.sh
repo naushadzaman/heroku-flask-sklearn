@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sudo apt-get install python-pip
-
+sudo apt-get install git
 
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
