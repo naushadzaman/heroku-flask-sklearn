@@ -3,10 +3,10 @@
 # setup pre-requisites
 #curl https://raw.github.com/naushadzaman/heroku-flask-sklearn/master/setup_prerequisite.sh | sh
 
-git clone https://github.com/naushadzaman/heroku-flask-sklearn
+#git clone https://github.com/naushadzaman/heroku-flask-sklearn
 
-mkdir flask-sklearn
-cd flask-sklearn/
+#mkdir flask-sklearn
+#cd flask-sklearn/
 
 cp ../heroku-flask-sklearn/.gitignore .
 cp ../heroku-flask-sklearn/Procfile .
