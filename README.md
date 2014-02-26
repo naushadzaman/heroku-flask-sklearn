@@ -10,12 +10,13 @@ Demo
 
     $ git clone https://github.com/naushadzaman/heroku-flask-sklearn
     
-    $ mkdir sample-foo
-    $ cd sample-foo/
+    $ mkdir flask-sklearn
+    $ cd flask-sklearn/
     
     $ cp ../heroku-flask-sklearn/.gitignore .
-    $ cp ../heroku-flask-sklearn/Procfile .	
+    $ cp ../heroku-flask-sklearn/Procfile .
     $ cp ../heroku-flask-sklearn/hello.py .
+    $ cp ../heroku-flask-sklearn/requirements.txt .
     
     $ rm -rf ../heroku-flask-sklearn
 
