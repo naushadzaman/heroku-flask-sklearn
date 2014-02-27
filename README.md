@@ -4,7 +4,7 @@ Install numpy, scipy, sklearn, flask and gunicorn in AWS (Amazon Web Services) a
 
 Heroku buildpack: Python, Numpy, Scipy, Scikit-learn along with instructions to install Flask, the web framework, and Gunicorn, the web server.
 
-Initial Setup 
+Initial Setup for both AWS and Heroku 
 -----
 	$ git clone https://github.com/naushadzaman/heroku-flask-sklearn
 	
@@ -54,6 +54,9 @@ Run next times after changing codes
 	ctrl + C
 	
 	# modify codes 
+
+	$ heroku scale web=1
+	$ heroku ps
 	
 	# commit to git 
 	$ git add .
@@ -62,3 +65,16 @@ Run next times after changing codes
 	
 	$ heroku scale web=1
 	$ heroku ps
+
+
+Setup for AWS only 
+-----
+	# initial setup 
+	$ curl https://raw.github.com/naushadzaman/heroku-flask-sklearn/master/onetime_setup.sh | sh
+	
+	# setup virtualenv 
+	$ virtualenv venv --distribute --no-site-packages
+	$ source venv/bin/activate
+		
+	# onetime setup for sklearn 
+	$ curl https://raw.github.com/naushadzaman/heroku-flask-sklearn/master/onetime_setup_sklearn.sh | sh
