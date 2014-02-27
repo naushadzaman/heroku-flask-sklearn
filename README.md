@@ -9,7 +9,7 @@ Initial Setup
 	$ git clone https://github.com/naushadzaman/heroku-flask-sklearn
 	
 	# initial setup 
-	$ https://raw.github.com/naushadzaman/heroku-flask-sklearn/master/onetime_setup.sh
+	$ curl https://raw.github.com/naushadzaman/heroku-flask-sklearn/master/onetime_setup.sh | sh
 	
 	$ mkdir flask-sklearn
 	$ cd flask-sklearn/
