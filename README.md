@@ -1,5 +1,6 @@
 heroku-flask-sklearn
 ====================
+Install numpy, scipy, sklearn, flask and gunicorn in AWS (Amazon Web Services) and Heroku. 
 
 Heroku buildpack: Python, Numpy, Scipy, Scikit-learn along with instructions to install Flask, the web framework, and Gunicorn, the web server.
 
