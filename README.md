@@ -8,32 +8,25 @@ Initial Setup for both AWS and Heroku
 -----
 	$ git clone https://github.com/naushadzaman/heroku-flask-sklearn
 	
-	# initial setup 
-	$ curl https://raw.github.com/naushadzaman/heroku-flask-sklearn/master/onetime_setup.sh | sh
+	$ cd heroku-flask-sklearn/
 	
-	$ mkdir flask-sklearn
-	$ cd flask-sklearn/
+	# initial setup 
+	$ ./onetime_setup.sh
 	
 	# setup virtualenv 
 	$ virtualenv venv --distribute --no-site-packages
 	$ source venv/bin/activate
 		
 	# onetime setup for sklearn 
-	$ curl https://raw.github.com/naushadzaman/heroku-flask-sklearn/master/onetime_setup_sklearn.sh | sh
+	$ ./onetime_setup_sklearn.sh 
 	
-	$ cp ../heroku-flask-sklearn/.gitignore .
-	$ cp ../heroku-flask-sklearn/Procfile .
-	$ cp ../heroku-flask-sklearn/hello.py .
-	$ cp ../heroku-flask-sklearn/requirements.txt .
-	
-	$ rm -rf ../heroku-flask-sklearn
 	
 	$ heroku login
 	
 	# create heroku buildpack with sklearn and its pre-requisites
-	$ git init
 	$ heroku create --buildpack https://github.com/naushadzaman/heroku-buildpack-python-sklearn/
-	
+	$ heroku create your-app-name --buildpack https://github.com/naushadzaman/heroku-buildpack-python-sklearn/	
+
 	$ git add .
 	$ git commit -m 'initialize'
 	
